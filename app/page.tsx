@@ -1,12 +1,13 @@
 "use client"
 
+import React from 'react'
 import { useEffect,useRef } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 gsap.registerPlugin(ScrollTrigger);
 
-import React from 'react'
+
 
 export default function page() {
   const boxRef = useRef<HTMLDivElement | null>(null);
@@ -23,6 +24,7 @@ export default function page() {
       },
     });
   },[]);
+
 
   return(
     <div style={{height:"200vh",paddingTop:"100vh"}}>
