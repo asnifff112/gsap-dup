@@ -18,8 +18,10 @@ export default function page() {
       duration:1,
       scrollTrigger:{
         trigger:boxRef.current,
+        
         start:"top 80%",
         end : "top 20%",
+
         scrub:true,
       },
     });
